@@ -19,3 +19,11 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.hero-path {
+  clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+}
+
+.hero-img-path {
+  clip-path: polygon(67% 0, 100% 0, 100% 68%, 80% 100%, 0 100%, 32% 51%);
+}
