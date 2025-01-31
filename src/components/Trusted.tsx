@@ -1,44 +1,89 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState, useRef } from "react";
 import SectionTitle from "./SectionTitle";
 import Image from "next/image";
 import { logos } from "@/mock/Logo";
+import CountUp from "react-countup";
 
 const Trusted = () => {
-  
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [startCount, setStartCount] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+          setStartCount(true);
+          observer.disconnect();
+        }
+      },
+      {
+        threshold: 0.5, 
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <section className="mx-[120px]">
+    <section className="mx-[120px]" ref={sectionRef}>
       <SectionTitle title="TRUSTED BY THE BEST" />
       <div className="grid grid-cols-3">
         <div className="text-center">
-          <h2
-            className="text-[64px] max-[280px]:text-[40px] lg:text-[96px] font-Montserrat font-semibold tracking-[-0.02em]  leading-none bg-gradient-to-b from-blue-main to-[#0057BB] text-transparent bg-clip-text
-  "
-          >
-            &gt;<span>20</span>
-          </h2>
+          {startCount && (
+            <CountUp start={0} end={20} delay={0}>
+              {({ countUpRef }) => (
+                <div>
+                  <h2
+                    className="text-[64px] max-[280px]:text-[40px] lg:text-[96px] font-Montserrat font-semibold tracking-[-0.02em]  leading-none bg-gradient-to-b from-blue-main to-[#0057BB] text-transparent bg-clip-text"
+                  >
+                    &gt;<span ref={countUpRef}></span>
+                  </h2>
+                </div>
+              )}
+            </CountUp>
+          )}
           <p className="text-right text-[#151D2F] lg:text-center max-lg:text-res-link lg:text-lg lg:mt-[19px]">
             Years of Experience
           </p>
         </div>
         <div className="text-center">
-          <h2
-            className="text-[64px] max-[280px]:text-[40px] lg:text-[96px] font-Montserrat font-semibold tracking-[-0.02em]  leading-none bg-gradient-to-b from-blue-main to-[#0057BB] text-transparent bg-clip-text
-  "
-          >
-            <span>40+</span>
-          </h2>
+          {startCount && (
+            <CountUp start={0} end={40} delay={0}>
+              {({ countUpRef }) => (
+                <div>
+                  <h2
+                    className="text-[64px] max-[280px]:text-[40px] lg:text-[96px] font-Montserrat font-semibold tracking-[-0.02em]  leading-none bg-gradient-to-b from-blue-main to-[#0057BB] text-transparent bg-clip-text"
+                  >
+                    <span ref={countUpRef}></span>+
+                  </h2>
+                </div>
+              )}
+            </CountUp>
+          )}
           <p className="text-right text-[#151D2F] lg:text-center max-lg:text-res-link lg:text-lg lg:mt-[19px]">
             Financial Institutions
           </p>
         </div>
         <div className="text-center">
-          <h2
-            className="text-[64px] max-[280px]:text-[40px] lg:text-[96px] font-Montserrat font-semibold tracking-[-0.02em]  leading-none bg-gradient-to-b from-blue-main to-[#0057BB] text-transparent bg-clip-text
-  "
-          >
-            &gt;<span>200m</span>
-          </h2>
+          {startCount && (
+            <CountUp start={0} end={200} delay={0}>
+              {({ countUpRef }) => (
+                <div>
+                  <h2
+                    className="text-[64px] max-[280px]:text-[40px] lg:text-[96px] font-Montserrat font-semibold tracking-[-0.02em]  leading-none bg-gradient-to-b from-blue-main to-[#0057BB] text-transparent bg-clip-text"
+                  >
+                    &gt;<span ref={countUpRef}></span>m
+                  </h2>
+                </div>
+              )}
+            </CountUp>
+          )}
           <p className="text-right text-[#151D2F] lg:text-center max-lg:text-res-link lg:text-lg lg:mt-[19px]">
             Customers Each
           </p>

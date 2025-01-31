@@ -42,7 +42,7 @@ const ContractUs = () => {
   return (
     <section
       ref={contactRef}
-      className="bg-footer-gradient h-[530px] footer-path relative"
+      className="bg-footer-gradient h-[530px] footer-path relative overflow-hidden"
     >
       <figure className="">
         <Image
