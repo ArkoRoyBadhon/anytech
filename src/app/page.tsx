@@ -1,4 +1,5 @@
 import Banner from '@/components/Banner';
+import ContractUs from '@/components/ContractUs';
 import Footer from '@/components/Footer';
 import FutureFinance from '@/components/FutureFinance';
 import Philosophy from '@/components/Philosophy';
@@ -17,6 +18,7 @@ const HomePage = () => {
       <FutureFinance />
       <Image width={1440} height={720} src="/pick/bottomSvg.svg" alt="hero" priority={true} />
       <Trusted />
+      <ContractUs />
       <Footer />
     </main>
   );
