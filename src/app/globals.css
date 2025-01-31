@@ -27,3 +27,12 @@ body {
 .hero-img-path {
   clip-path: polygon(67% 0, 100% 0, 100% 68%, 80% 100%, 0 100%, 32% 51%);
 }
+
+@layer base {
+  .text-body-1 {
+    @apply text-base leading-[1.6] font-normal;
+  }
+  .shadow-card {
+    box-shadow: 0px 23px 30px 0px #16437763;
+  }
+}

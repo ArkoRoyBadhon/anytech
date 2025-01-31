@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
-    domains: ['cdn.sanity.io'], // Add the domain here
+    domains: ['cdn.sanity.io', 'anytxn.com'], // Add the domain here
   },
 };
 
