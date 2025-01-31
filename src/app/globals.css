@@ -35,4 +35,7 @@ body {
   .shadow-card {
     box-shadow: 0px 23px 30px 0px #16437763;
   }
+  .common-text {
+    @apply text-[24px] leading-[130%] font-semibold  py-[12px];
+  }
 }

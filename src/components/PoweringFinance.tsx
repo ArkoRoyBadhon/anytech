@@ -97,13 +97,6 @@ const PoweringFinance = () => {
               alt="background frame"
             />
           </figure>
-
-          <Image
-            width={1000}
-            height={1000}
-            alt="img"
-            src="/pick/poweringBottom.svg"
-          />
         </div>
       </div>
     </section>
