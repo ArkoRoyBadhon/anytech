@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-[#002045] ">
-      <div className="flex items-center justify-between mx-[120px] py-[32px]">
+      <div className="flex items-center justify-between screen_size py-[32px]">
         <Image
           width={1440}
           height={720}
@@ -43,10 +43,15 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+        <div className="flex gap-6 md:hidden">
+          <Image src="https://cdn.sanity.io/images/6jywt20u/production/13baec705b693635850a77c8d13a26ba9e2318c4-14x15.svg?w=320&fm=webp" alt="arrow" width={24} height={24} />
+          <Image src="https://cdn.sanity.io/images/6jywt20u/production/4c3113a756fa8bc9ce8c8878e1361d5287f99c6a-17x18.svg?w=320&fm=webp" alt="arrow" width={24} height={24} />
+          <Image src="https://cdn.sanity.io/images/6jywt20u/production/2cc1280badc532d4adb15fbfed7307e1c5c7696a-16x12.svg?w=320&fm=webp" alt="arrow" width={24} height={24} />
+        </div>
       </div>
-      <div className="bg-[#00152D] px-[120px]">
-        <div className="container flex flex-col items-center justify-between py-6 text-res-body-p2 text-blue-main lg:flex-row lg:text-body-p2">
-          <p>
+      <div className="bg-[#00152D] text-center md:text-left text-[12px] md:text-[16px]">
+        <div className="screen_size flex flex-col items-center justify-between py-6 text-res-body-p2 text-blue-main lg:flex-row lg:text-body-p2">
+          <p className="">
             <strong>©2023 All rights reserved</strong>. Any Technology Pte Ltd.
           </p>
           <div className="flex items-center gap-[14px] max-lg:mt-4">

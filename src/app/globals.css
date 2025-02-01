@@ -21,7 +21,7 @@ body {
 }
 
 .hero-path {
-  clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 88%);
 }
 
 .hero-img-path {
@@ -29,10 +29,26 @@ body {
 }
 
 .footer-path {
-  clip-path: polygon(0 0, 100% 49%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
+}
+@media (min-width: 1024px) { 
+  .hero-path {
+    clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+  }
+  .footer-path {
+    clip-path: polygon(0 0, 100% 49%, 100% 100%, 0% 100%);
+  }
 }
 
+.mobile-banner-path {
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+}
+
+
 @layer base {
+  .screen_size {
+    @apply w-full lg:w-[976px] xl:w-[1200px] p-[31px] mx-auto;
+  }
   .text-body-1 {
     @apply text-base leading-[1.6] font-normal;
   }
@@ -41,5 +57,17 @@ body {
   }
   .common-text {
     @apply text-[24px] leading-[130%] font-semibold  py-[12px];
+  }
+  
+}
+
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
   }
 }

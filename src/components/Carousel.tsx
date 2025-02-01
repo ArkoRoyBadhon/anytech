@@ -69,7 +69,7 @@ const CarouselWithMenu: React.FC = () => {
 
   return (
     <div className="w-full">
-      <div className="flex justify-center space-x-4 my-8">
+      <div className="lg:flex justify-center hidden space-x-4 my-8">
         {menuItems.map((menu, index) => (
           <button
             key={index}
@@ -100,14 +100,23 @@ const CarouselWithMenu: React.FC = () => {
       >
         {CarouselData.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="w-full h-full grid grid-cols-2 gap-[32px] bg-gray-50 rounded-lg p-[64px]">
+            <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-[32px] bg-white rounded-lg p-[24px] lg:p-[64px]">
               <div className="">
-                <h6 className="text-[16px] leading-[150%] tracking-[2.56px] font-bold uppercase text-blue-main font-Montserrat">
+                <h6 className="text-[12px] lg:text-[16px] leading-[150%] tracking-[2.56px] font-bold uppercase text-blue-main font-Montserrat">
                   {item.subTitle}
                 </h6>
-                <h3 className="undefined text-blue-text text-[40px] leading-[120%] font-semibold font-Montserrat my-[32px]">
+                <h3 className="undefined text-blue-text text-[24px] lg:text-[40px] leading-[120%] font-semibold font-Montserrat my-[16px] lg:my-[32px]">
                   {item.title}
                 </h3>
+                <figure className="lg:hidden">
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  width={489}
+                  height={130}
+                  className="w-full h-[130px] mb-6 rounded-md object-cover"
+                />
+              </figure>
                 <p className="text-[16px] leading-[160%] font-normal mb-4">
                   <strong>{item.para1}</strong>
                 </p>
@@ -115,7 +124,7 @@ const CarouselWithMenu: React.FC = () => {
                   {item.para2}
                 </p>
               </div>
-              <figure className="">
+              <figure className="hidden lg:block">
                 <Image
                   src={item.img}
                   alt={item.title}

@@ -31,10 +31,10 @@ const Trusted = () => {
   }, []);
 
   return (
-    <section className="mx-[120px]" ref={sectionRef}>
+    <section className="screen_size" ref={sectionRef}>
       <SectionTitle title="TRUSTED BY THE BEST" />
-      <div className="grid grid-cols-3">
-        <div className="text-center">
+      <div className="grid grid-cols-1 lg:grid-cols-3">
+        <div className="text-center flex justify-between items-center md:flex-col py-[16px] lg:py-0 border-b border-dotted border-blue-main lg:border-none">
           {startCount && (
             <CountUp start={0} end={20} delay={0}>
               {({ countUpRef }) => (
@@ -48,11 +48,11 @@ const Trusted = () => {
               )}
             </CountUp>
           )}
-          <p className="text-right text-[#151D2F] lg:text-center max-lg:text-res-link lg:text-lg lg:mt-[19px]">
+          <p className="text-right text-[#151D2F] lg:text-center max-lg:text-res-link lg:text-lg lg:mt-[19px] font-semibold">
             Years of Experience
           </p>
         </div>
-        <div className="text-center">
+        <div className="text-center flex justify-between items-center md:flex-col py-[16px] lg:py-0 border-b border-dotted border-blue-main lg:border-none">
           {startCount && (
             <CountUp start={0} end={40} delay={0}>
               {({ countUpRef }) => (
@@ -66,11 +66,11 @@ const Trusted = () => {
               )}
             </CountUp>
           )}
-          <p className="text-right text-[#151D2F] lg:text-center max-lg:text-res-link lg:text-lg lg:mt-[19px]">
+          <p className="text-right text-[#151D2F] lg:text-center max-lg:text-res-link lg:text-lg lg:mt-[19px] font-semibold">
             Financial Institutions
           </p>
         </div>
-        <div className="text-center">
+        <div className="text-center flex justify-between items-center md:flex-col py-[16px] lg:py-0 border-b border-dotted border-blue-main lg:border-none">
           {startCount && (
             <CountUp start={0} end={200} delay={0}>
               {({ countUpRef }) => (
@@ -84,7 +84,7 @@ const Trusted = () => {
               )}
             </CountUp>
           )}
-          <p className="text-right text-[#151D2F] lg:text-center max-lg:text-res-link lg:text-lg lg:mt-[19px]">
+          <p className="text-right text-[#151D2F] lg:text-center max-lg:text-res-link lg:text-lg lg:mt-[19px] font-semibold">
             Customers Each
           </p>
         </div>

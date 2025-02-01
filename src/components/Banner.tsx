@@ -53,28 +53,8 @@ const Banner: React.FC = () => {
     );
   }, []);
 
-  return (
-    <section
-      ref={bannerRef}
-      className="h-[92vh] bg-hero-gradient hero-path relative overflow-hidden"
-    >
-      <Image
-        ref={image1Ref}
-        src="/backgrounds/WaveLinesDesktop1.svg"
-        width={1920}
-        height={1080}
-        className="w-full h-full absolute left-[-26px] bottom-14 z-10"
-        alt="Banner"
-      />
-      <Image
-        ref={image2Ref}
-        src="/backgrounds/WaveLinesDesktop2.svg"
-        width={1920}
-        height={1080}
-        className="w-full h-full absolute left-[-26px] top-[-400px] scale-[2] z-10"
-        alt="Banner"
-      />
-
+  const BannerImg = () => {
+    return (
       <figure className="absolute top-0 xl:left-[35%] xl:w-[65%] h-full hero-img-path">
         <Image
           ref={imageContainerRef}
@@ -84,21 +64,60 @@ const Banner: React.FC = () => {
           alt="banner-img"
           className="h-full w-full "
         />
+        <div className="bg-deep-gradient w-full h-full absolute top-0 right-0 z-20"></div>
       </figure>
-      <div className="container relative z-10 w-full h-full md:flex md:items-center md:justify-center mx-[120px] p-[31px]">
-        <div className="h-fit lg:flex-[65] xl:flex-[75]">
-          <header className="max-w-2xl lg:space-y-sm space-y-[16px] mb-[32px]">
-            <h1 className="text-[80px] text-white leading-[115%] tracking-[-1.6px] font-semibold">
-              Embrace the future of finance
-            </h1>{" "}
-            <h5 className="!text-white max-w-[37rem] lg:mr-5  font-Montserrat">
-              Reimagine financial services with AnyTech’s open platform,
-              distributed banking solution that powers transformation
-            </h5>
-          </header>{" "}
-          <ButtonUi title="Reach Out to Us" />
-        </div>{" "}
-        <div className="lg:flex-[35] xl:flex-[25] lg:block hidden"></div>
+    );
+  };
+
+  return (
+    <section
+      ref={bannerRef}
+      className="h-[148vh] lg:h-[92vh] bg-hero-gradient hero-path relative overflow-hidden pt-[100px] lg:pt-0"
+    >
+      <div className="screen_size lg:h-[80vh]">
+        <Image
+          ref={image1Ref}
+          src="/backgrounds/WaveLinesDesktop1.svg"
+          width={1920}
+          height={1080}
+          className="w-full h-full absolute left-[-26px] bottom-14 z-10"
+          alt="Banner"
+        />
+        <Image
+          ref={image2Ref}
+          src="/backgrounds/WaveLinesDesktop2.svg"
+          width={1920}
+          height={1080}
+          className="w-full h-full absolute left-[-26px] top-[-400px] scale-[2] z-10"
+          alt="Banner"
+        />
+        <div className="hidden lg:block">
+          <BannerImg />
+        </div>
+        <div className=" relative z-10 w-full h-full md:flex md:items-center md:justify-center">
+          <div className="h-full flex flex-col justify-center">
+            <header className="max-w-2xl lg:space-y-sm space-y-[16px] mb-[32px]">
+              <h1 className="text-[56px] lg:text-[80px] text-white leading-[115%] tracking-[-1.6px] font-semibold">
+                Embrace the future of finance
+              </h1>{" "}
+              <h5 className="!text-white max-w-[37rem] lg:mr-5  font-Montserrat">
+                Reimagine financial services with AnyTech’s open platform,
+                distributed banking solution that powers transformation
+              </h5>
+            </header>{" "}
+            <ButtonUi title="Reach Out to Us" />
+          </div>{" "}
+          <div className="lg:flex-[35] xl:flex-[25] lg:block hidden"></div>
+        </div>
+        <figure className="absolute bottom-[100px] left-0 w-[100vw] h-[283px] mobile-banner-path lg:hidden">
+          <Image
+            width={1014}
+            height={1024}
+            src="https://cdn.sanity.io/images/6jywt20u/production/4c4adc11b7ca6ea25c7e7cba555d8f0b06488f3f-7952x5304.jpg?w=1600&auto=format"
+            alt="banner-img"
+            className="h-full w-full"
+          />
+        </figure>
       </div>
     </section>
   );

@@ -42,7 +42,7 @@ const ContractUs = () => {
   return (
     <section
       ref={contactRef}
-      className="bg-footer-gradient h-[530px] footer-path relative overflow-hidden"
+      className="bg-footer-gradient h-[60vh] lg:h-[530px] footer footer-path relative overflow-hidden"
     >
       <figure className="">
         <Image
@@ -64,7 +64,7 @@ const ContractUs = () => {
           alt="Banner"
         />
       </figure>
-      <div className="container flex w-full items-start justify-center h-full relative z-10 flex-col mt-6 px-[120px]">
+      <div className=" flex items-start justify-center h-full relative z-10 flex-col mt-6 screen_size">
         <h2 className="font-Montserrat text-[32px] lg:text-[56px] leading-[110%] font-semibold text-white mb-[24px]">
           Legacy no longer
         </h2>{" "}
