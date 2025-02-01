@@ -43,13 +43,13 @@ const Banner: React.FC = () => {
     }
     gsap.fromTo(
       image1Ref.current,
-      { x: 100 },
-      { x: 0, duration: 2, ease: "power1" }
+      { x: 160, y:160 },
+      { x: 0, y: 0, duration: 2, ease: "power1" }
     );
     gsap.fromTo(
       image2Ref.current,
-      { x: -100 },
-      { x: 0, duration: 2, ease: "power1" }
+      { x: -160, y:-160 },
+      { x: 0, y: 0, duration: 2, ease: "power1" }
     );
   }, []);
 
@@ -72,7 +72,7 @@ const Banner: React.FC = () => {
   return (
     <section
       ref={bannerRef}
-      className="h-[148vh] lg:h-[92vh] bg-hero-gradient hero-path relative overflow-hidden pt-[100px] lg:pt-0"
+      className="h-[148vh] md:h-[160vh] lg:h-[92vh] bg-hero-gradient hero-path relative overflow-hidden pt-[100px] lg:pt-0"
     >
       <div className="screen_size lg:h-[80vh]">
         <Image
@@ -109,7 +109,7 @@ const Banner: React.FC = () => {
           </div>{" "}
           <div className="lg:flex-[35] xl:flex-[25] lg:block hidden"></div>
         </div>
-        <figure className="absolute bottom-[100px] left-0 w-[100vw] h-[283px] mobile-banner-path lg:hidden">
+        <figure className="absolute bottom-[100px] md:bottom-[40px] left-0 w-[100vw] h-[283px] md:h-[425px] mobile-banner-path lg:hidden">
           <Image
             width={1014}
             height={1024}

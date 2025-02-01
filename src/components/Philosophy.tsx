@@ -15,14 +15,14 @@ const Philosophy = () => {
           alt="Philosophy"
           width={440}
           height={360}
-          className="lg:hidden"
+          className="md:hidden"
         />
         <Image
           src="https://cdn.sanity.io/images/6jywt20u/production/2d90adc3456764f98e38ce40b5ea7d7f52fd4ce1-2206x727.png?w=2206&auto=format"
           alt="Philosophy"
           width={1440}
           height={720}
-          className="hidden lg:block"
+          className="hidden md:block"
         />
       </figure>
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">

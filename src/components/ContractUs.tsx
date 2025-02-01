@@ -39,6 +39,20 @@ const ContractUs = () => {
     };
   }, []);
 
+  useEffect(() => {
+    
+    gsap.fromTo(
+      conImg1Ref.current,
+      { x: 160, y:160 },
+      { x: 0, y: 0, delay: 1, duration: 2, ease: "power1" }
+    );
+    gsap.fromTo(
+      conImg2Ref.current,
+      { x: -160, y:-160 },
+      { x: 0, y: 0, delay: 1, duration: 2, ease: "power1" }
+    );
+  }, []);
+
   return (
     <section
       ref={contactRef}

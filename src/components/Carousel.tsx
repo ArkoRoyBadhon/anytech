@@ -114,7 +114,7 @@ const CarouselWithMenu: React.FC = () => {
                   alt={item.title}
                   width={489}
                   height={130}
-                  className="w-full h-[130px] mb-6 rounded-md object-cover"
+                  className="w-full h-[130px] md:h-[425px] mb-6 rounded-md object-cover"
                 />
               </figure>
                 <p className="text-[16px] leading-[160%] font-normal mb-4">

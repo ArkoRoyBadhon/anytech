@@ -34,7 +34,7 @@ const Trusted = () => {
     <section className="screen_size" ref={sectionRef}>
       <SectionTitle title="TRUSTED BY THE BEST" />
       <div className="grid grid-cols-1 lg:grid-cols-3">
-        <div className="text-center flex justify-between items-center md:flex-col py-[16px] lg:py-0 border-b border-dotted border-blue-main lg:border-none">
+        <div className="text-center flex justify-between items-center lg:flex-col py-[16px] lg:py-0 border-b border-dotted border-blue-main lg:border-none">
           {startCount && (
             <CountUp start={0} end={20} delay={0}>
               {({ countUpRef }) => (
@@ -52,7 +52,7 @@ const Trusted = () => {
             Years of Experience
           </p>
         </div>
-        <div className="text-center flex justify-between items-center md:flex-col py-[16px] lg:py-0 border-b border-dotted border-blue-main lg:border-none">
+        <div className="text-center flex justify-between items-center lg:flex-col py-[16px] lg:py-0 border-b border-dotted border-blue-main lg:border-none">
           {startCount && (
             <CountUp start={0} end={40} delay={0}>
               {({ countUpRef }) => (
@@ -70,7 +70,7 @@ const Trusted = () => {
             Financial Institutions
           </p>
         </div>
-        <div className="text-center flex justify-between items-center md:flex-col py-[16px] lg:py-0 border-b border-dotted border-blue-main lg:border-none">
+        <div className="text-center flex justify-between items-center lg:flex-col py-[16px] lg:py-0 border-b border-dotted border-blue-main lg:border-none">
           {startCount && (
             <CountUp start={0} end={200} delay={0}>
               {({ countUpRef }) => (
@@ -89,7 +89,7 @@ const Trusted = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-5 gap-x-[16px] gap-y-[34px] mt-[128px] items-center">
+      <div className="grid grid-cols-3 lg:grid-cols-5 gap-x-[16px] gap-y-[34px] mt-[128px] items-center">
         {logos.map((logo, index) => (
           <div className="col-span-1" key={index}>
             <Image

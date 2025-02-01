@@ -146,7 +146,7 @@ const PoweringFinance: React.FC = () => {
 
   return (
     <section ref={powerRef}>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-[15px] screen_size lg:mt-[20px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[15px] screen_size lg:mt-[20px]">
         <div>
           <h6 className="text-[12px] lg:text-[16px] leading-[1.5] tracking-[2.56px] font-bold uppercase font-Montserrat">
             POWERING THE FUTURE OF FINANCE
@@ -170,12 +170,12 @@ const PoweringFinance: React.FC = () => {
                 technology for lasting success.
               </p>
             </div>
-            <div className="lg:hidden">
+            <div className="md:hidden">
               <ImageElement />
             </div>
           </div>
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden md:block">
           <ImageElement />
         </div>
       </div>
