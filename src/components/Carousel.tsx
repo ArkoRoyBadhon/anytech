@@ -105,7 +105,7 @@ const CarouselWithMenu: React.FC = () => {
                 <h6 className="text-[12px] lg:text-[16px] leading-[150%] tracking-[2.56px] font-bold uppercase text-blue-main font-Montserrat">
                   {item.subTitle}
                 </h6>
-                <h3 className="undefined text-blue-text text-[24px] lg:text-[40px] leading-[120%] font-semibold font-Montserrat my-[16px] lg:my-[32px]">
+                <h3 className="text-text-col text-blue-text text-[24px] lg:text-[40px] leading-[120%] font-semibold font-Montserrat my-[16px] lg:my-[32px]">
                   {item.title}
                 </h3>
                 <figure className="lg:hidden">
@@ -117,10 +117,10 @@ const CarouselWithMenu: React.FC = () => {
                   className="w-full h-[130px] md:h-[425px] mb-6 rounded-md object-cover"
                 />
               </figure>
-                <p className="text-[16px] leading-[160%] font-normal mb-4">
+                <p className="text-[16px] text-text-col leading-[160%] font-normal mb-4">
                   <strong>{item.para1}</strong>
                 </p>
-                <p className="text-[16px] leading-[160%] font-normal">
+                <p className="text-[16px] text-text-col leading-[160%] font-normal">
                   {item.para2}
                 </p>
               </div>

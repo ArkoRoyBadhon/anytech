@@ -10,7 +10,7 @@ const ButtonUi = ({
   isTransparent?: boolean;
 }) => {
   return (
-    <div className="flex lg:flex-row flex-col lg:space-x-[16px] space-y-4 lg:space-y-0 w-full lg:mb-0 mb-md max-w-xl">
+    <div className="flex lg:flex-row flex-col lg:space-x-[16px] space-y-4 lg:space-y-0 w-full lg:mb-0 mb-md max-w-full">
       <a
         className={`group md:py-[15.5px] py-[14px] px-[42px] rounded-xs shadow-button-primary text-link  flex items-center justify-center space-x-[8px] ${isTransparent ? `bg-transparent outline outline-1 hover:bg-white` : `bg-[${color}] hover:bg-[${hoverColor}] text-white`}  font-semibold rounded-[3px] transition-all duration-300 transform  `}
         href="#"

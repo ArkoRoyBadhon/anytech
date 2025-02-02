@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,6 +33,12 @@ body {
 .footer-path {
   clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
 }
+.mobile-banner-path {
+  /* clip-path: polygon(67% 0, 100% 0, 100% 68%, 80% 100%, 0 100%, 32% 51%); */
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+
+}
+
 @media (min-width: 1024px) { 
   .hero-path {
     clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
@@ -38,16 +46,17 @@ body {
   .footer-path {
     clip-path: polygon(0 0, 100% 49%, 100% 100%, 0% 100%);
   }
+  .mobile-banner-path {
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+  }
+  
 }
 
-.mobile-banner-path {
-  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
-}
 
 
 @layer base {
   .screen_size {
-    @apply w-full lg:w-[976px] xl:w-[1200px] p-[31px] mx-auto;
+    @apply w-full lg:w-[976px] xl:w-[1200px] px-[31px] mx-auto;
   }
   .text-body-1 {
     @apply text-base leading-[1.6] font-normal;

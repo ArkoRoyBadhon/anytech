@@ -12,6 +12,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         "blue-main": "#1F80F0",
+        "text-col": "#0b305b",
       },
       backgroundImage: {
         'hero-gradient': 'radial-gradient(59.82% 121.73% at -9.66% 130.31%, #00e9ea 0%, #1f80f0 52.08%, #005bc4 100%)',
@@ -22,7 +23,10 @@ export default {
         custom: "0px 16px 21px rgba(207, 233, 247, 0.47)",
         custom2: "0px -5px 28px rgba(22, 67, 119, .37)",
       },
-
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
     },
   },
   plugins: [],

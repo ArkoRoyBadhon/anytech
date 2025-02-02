@@ -43,19 +43,19 @@ const Banner: React.FC = () => {
     }
     gsap.fromTo(
       image1Ref.current,
-      { x: 160, y:160 },
+      { x: 160, y: 160 },
       { x: 0, y: 0, duration: 2, ease: "power1" }
     );
     gsap.fromTo(
       image2Ref.current,
-      { x: -160, y:-160 },
+      { x: -160, y: -160 },
       { x: 0, y: 0, duration: 2, ease: "power1" }
     );
   }, []);
 
   const BannerImg = () => {
     return (
-      <figure className="absolute top-0 xl:left-[35%] xl:w-[65%] h-full hero-img-path">
+      <figure className="absolute top-0 lg:left-[44%] xl:left-[35%] lg:w-[65%] h-full hero-img-path">
         <Image
           ref={imageContainerRef}
           width={1014}
@@ -72,7 +72,7 @@ const Banner: React.FC = () => {
   return (
     <section
       ref={bannerRef}
-      className="h-[148vh] md:h-[160vh] lg:h-[92vh] bg-hero-gradient hero-path relative overflow-hidden pt-[100px] lg:pt-0"
+      className="h-[148vh] md:h-[160vh] lg:h-[620px] bg-hero-gradient hero-path relative overflow-hidden pt-[100px] md:pt-[150px] lg:pt-14"
     >
       <div className="screen_size lg:h-[80vh]">
         <Image
@@ -96,11 +96,11 @@ const Banner: React.FC = () => {
         </div>
         <div className=" relative z-10 w-full h-full md:flex md:items-center md:justify-center">
           <div className="h-full flex flex-col justify-center">
-            <header className="max-w-2xl lg:space-y-sm space-y-[16px] mb-[32px]">
+            <header className="max-w-2xl lg:w-full xl:max-w-2xl lg:space-y-sm space-y-[16px] mb-[32px]">
               <h1 className="text-[56px] lg:text-[80px] text-white leading-[115%] tracking-[-1.6px] font-semibold">
                 Embrace the future of finance
               </h1>{" "}
-              <h5 className="!text-white max-w-[37rem] lg:mr-5  font-Montserrat">
+              <h5 className="!text-white max-w-[37rem] lg:max-w-[32rem] xl:max-w-[37rem] lg:mr-5 font-semibold font-Montserrat">
                 Reimagine financial services with AnyTech’s open platform,
                 distributed banking solution that powers transformation
               </h5>

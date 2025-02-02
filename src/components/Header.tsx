@@ -84,7 +84,7 @@ const Header = () => {
             <ul className="flex items-center space-x-4">
               <li ref={solutionRef} className="px-[24px] py-[12px] relative">
                 <div className="flex">
-                  <span className="">Solutions</span>
+                  <span className={`${isTransparent ? `text-white` : `text-blue-main`}`}>Solutions</span>
                   <div className="rotate-90">
                     <svg
                       className={`group-hover:translate-x-1 transition-transform duration-300 hover:scale-105 fill-white ${
@@ -100,7 +100,7 @@ const Header = () => {
                   </div>
                 </div>
                 <ul
-                  className={`absolute rounded-[3px] top-[50px] left-5 bg-white text-black w-[200px] ${
+                  className={`absolute rounded-[3px] top-[50px] left-5 bg-white text-text-col w-[200px] ${
                     isMouseOver ? "hidden" : "block"
                   }`}
                 >
@@ -116,13 +116,13 @@ const Header = () => {
                 </ul>
               </li>
               <li className="px-[24px] py-[12px] hover:border-b hover:pb-[10px]">
-                <a href="#">Services</a>
+                <a className={`${isTransparent ? `text-white` : `text-blue-main`}`} href="#">Services</a>
               </li>
               <li className="px-[24px] py-[12px] hover:border-b hover:pb-[10px]">
-                <a href="#">About Us</a>
+                <a className={`${isTransparent ? `text-white` : `text-blue-main`}`} href="#">About Us</a>
               </li>
               <li className="">
-                <button className="px-[24px] py-[6px] border rounded-3xl flex justify-center items-center gap-2">
+                <button className={`px-[24px] py-[6px] border rounded-3xl flex justify-center items-center gap-2 ${isTransparent ? `text-white border-white` : `text-blue-main border-blue-main`}`}>
                   <svg
                     width="12"
                     height="13"

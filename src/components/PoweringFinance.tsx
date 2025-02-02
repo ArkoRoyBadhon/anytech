@@ -65,7 +65,7 @@ const PoweringFinance: React.FC = () => {
 
   const ImageElement = () => {
     return (
-      <div className="w-full lg:w-[561px] h-[335px] lg:h-[517px] relative my-[60px] lg:my-0">
+      <div className="w-full lg:w-[400px] xl:w-[561px] h-[335px] lg:h-[517px] relative my-[60px] lg:my-0">
         <figure className="w-[76%] h-full shadow-card mx-auto">
           <Image
             width={427}
@@ -148,13 +148,13 @@ const PoweringFinance: React.FC = () => {
     <section ref={powerRef}>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[15px] screen_size lg:mt-[20px]">
         <div>
-          <h6 className="text-[12px] lg:text-[16px] leading-[1.5] tracking-[2.56px] font-bold uppercase font-Montserrat">
+          <h6 className="text-[12px] lg:text-[16px] leading-[1.5] tracking-[2.56px] font-bold uppercase font-Montserrat text-blue-main">
             POWERING THE FUTURE OF FINANCE
           </h6>
-          <h2 className="font-Montserrat text-[24px] lg:text-[56px] leading-[110%] font-semibold whitespace-pre-line lg:w-[561px] my-[24px]">
+          <h2 className="font-Montserrat text-[24px] lg:text-[56px] leading-[110%] font-semibold whitespace-pre-line lg:w-[561px] my-[24px] text-text-col">
             Uncovering new ways to delight customers
           </h2>
-          <div className="flex flex-col-reverse lg:flex-row">
+          <div className="flex flex-col-reverse lg:flex-row text-text-col">
             <div className="lg:pt-2 lg:w-[561px]">
               <p className="text-body-1">
                 <strong>

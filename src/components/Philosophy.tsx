@@ -53,7 +53,7 @@ const Philosophy = () => {
           className="hidden md:block"
         />
       </figure>
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] text-text-col">
       {/* ref={(el: any) => el && iconRefs.current.push(el)} */}
         <li ref={(el:any) => el && cardRefs.current.push(el)} className="translate-y-[20%] z-20 h-full md:space-y-sm space-y-[8px] bg-[#F8FCFF] rounded-[20px] md:p-md p-[32px] ">
           <figure className="w-fit rounded-full">
